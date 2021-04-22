@@ -42,7 +42,7 @@ public class GrupoController {
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
-    public void excluirGrupo(@PathVariable Long id) {
+    public void excluiGrupo(@PathVariable Long id) {
         grupoService.excluiGrupo(id);
     }
 
