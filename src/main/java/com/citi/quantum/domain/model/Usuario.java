@@ -1,8 +1,10 @@
 package com.citi.quantum.domain.model;
 
+import com.fasterxml.jackson.annotation.*;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -14,6 +16,7 @@ public class Usuario {
     private Long id;
     private String nome;
 
-    public void setCodigo(int id) {
-    }
+    @ManyToMany(mappedBy = "usuarios")
+    @JsonBackReference
+    List<Grupo> grupos;
 }
