@@ -17,7 +17,8 @@ public class Grupo {
     private String nome;
 
     @ManyToMany
-    @JsonManagedReference
     @JoinTable(name = "GRUPO_USUARIO", joinColumns = @JoinColumn(name = "grupo_id"), inverseJoinColumns = @JoinColumn(name = "usuario_id"))
+    @JsonIgnoreProperties("grupos")
     List<Usuario> usuarios;
+
 }

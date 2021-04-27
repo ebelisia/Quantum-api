@@ -17,6 +17,6 @@ public class Usuario {
     private String nome;
 
     @ManyToMany(mappedBy = "usuarios")
-    @JsonBackReference
+    @JsonIgnoreProperties("usuarios")
     List<Grupo> grupos;
 }
