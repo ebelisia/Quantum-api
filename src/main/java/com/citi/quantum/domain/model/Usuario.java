@@ -15,6 +15,9 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario")
     private Long id;
     private String nome;
+    private String email;
+    private String genero;
+    private int telefone;
 
     @ManyToMany(mappedBy = "usuarios")
     @JsonIgnoreProperties("usuarios")

@@ -21,4 +21,8 @@ public class Grupo {
     @JsonIgnoreProperties("grupos")
     List<Usuario> usuarios;
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "patrimonio_id", referencedColumnName = "id")
+    @JsonIgnoreProperties("grupo")
+    Patrimonio patrimonio;
 }

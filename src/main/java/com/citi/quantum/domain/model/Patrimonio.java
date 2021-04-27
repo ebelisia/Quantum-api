@@ -1,5 +1,6 @@
 package com.citi.quantum.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -18,5 +19,9 @@ public abstract class Patrimonio {
     private BigDecimal valor;
     private BigDecimal valorSeguro;
     private String observacoes;
+
+    @OneToOne(mappedBy = "patrimonio", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonIgnoreProperties("patrimonio")
+    private Grupo grupo;
 
 }

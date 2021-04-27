@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
+import java.math.BigDecimal;
 
 @Entity
 @Data
@@ -12,4 +13,7 @@ public class Automovel extends Patrimonio{
 
     private String placa;
     private String marca;
+    private String modelo;
+    private int ano;
+    private BigDecimal valorLicenciamento;
 }
