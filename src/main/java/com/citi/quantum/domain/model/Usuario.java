@@ -1,8 +1,10 @@
 package com.citi.quantum.domain.model;
 
+import com.fasterxml.jackson.annotation.*;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -13,7 +15,11 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usuario")
     private Long id;
     private String nome;
+    private String email;
+    private String genero;
+    private int telefone;
 
-    public void setCodigo(int id) {
-    }
+    @ManyToMany(mappedBy = "usuarios")
+    @JsonIgnoreProperties("usuarios")
+    List<Grupo> grupos;
 }

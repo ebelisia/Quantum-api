@@ -1,8 +1,10 @@
 package com.citi.quantum.domain.model;
 
+import com.fasterxml.jackson.annotation.*;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Data
 @Entity
@@ -14,4 +16,13 @@ public class Grupo {
     private Long id;
     private String nome;
 
+    @ManyToMany
+    @JoinTable(name = "GRUPO_USUARIO", joinColumns = @JoinColumn(name = "grupo_id"), inverseJoinColumns = @JoinColumn(name = "usuario_id"))
+    @JsonIgnoreProperties("grupos")
+    List<Usuario> usuarios;
+
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "patrimonio_id", referencedColumnName = "id")
+    @JsonIgnoreProperties("grupo")
+    Patrimonio patrimonio;
 }
