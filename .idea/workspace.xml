@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34d84ef8-9522-49c1-b3e4-3e997cbd350e" name="Default Changelist" comment="removing build">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="34d84ef8-9522-49c1-b3e4-3e997cbd350e" name="Default Changelist" comment="adding gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +167,7 @@
       <workItem from="1631192519805" duration="3793000" />
       <workItem from="1632184827152" duration="1779000" />
       <workItem from="1632186697220" duration="1149000" />
-      <workItem from="1632197178620" duration="4605000" />
+      <workItem from="1632197178620" duration="4925000" />
     </task>
     <task id="LOCAL-00001" summary="deploy config">
       <created>1632187250725</created>
@@ -256,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632201879540</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding gitignore">
+      <created>1632201957738</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632201957738</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +286,7 @@
     <MESSAGE value="excluding build of gitignore" />
     <MESSAGE value="adding build in gitignore" />
     <MESSAGE value="removing build" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing build" />
+    <MESSAGE value="adding gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding gitignore" />
   </component>
 </project>
