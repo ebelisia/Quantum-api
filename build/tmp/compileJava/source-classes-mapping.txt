@@ -1,0 +1,36 @@
+com/citi/quantum/domain/model/Patrimonio.java
+ com.citi.quantum.domain.model.Patrimonio
+com/citi/quantum/controllers/AutomovelController.java
+ com.citi.quantum.controllers.AutomovelController
+com/citi/quantum/domain/model/Imovel.java
+ com.citi.quantum.domain.model.Imovel
+com/citi/quantum/services/UsuarioService.java
+ com.citi.quantum.services.UsuarioService
+com/citi/quantum/domain/repository/ImovelRepository.java
+ com.citi.quantum.domain.repository.ImovelRepository
+com/citi/quantum/services/ImovelService.java
+ com.citi.quantum.services.ImovelService
+com/citi/quantum/domain/repository/UsuarioRepository.java
+ com.citi.quantum.domain.repository.UsuarioRepository
+com/citi/quantum/domain/model/Automovel.java
+ com.citi.quantum.domain.model.Automovel
+com/citi/quantum/services/GrupoService.java
+ com.citi.quantum.services.GrupoService
+com/citi/quantum/domain/repository/GrupoRepository.java
+ com.citi.quantum.domain.repository.GrupoRepository
+com/citi/quantum/controllers/UsuarioController.java
+ com.citi.quantum.controllers.UsuarioController
+com/citi/quantum/domain/model/Grupo.java
+ com.citi.quantum.domain.model.Grupo
+com/citi/quantum/controllers/GrupoController.java
+ com.citi.quantum.controllers.GrupoController
+com/citi/quantum/controllers/ImovelController.java
+ com.citi.quantum.controllers.ImovelController
+com/citi/quantum/services/AutomovelService.java
+ com.citi.quantum.services.AutomovelService
+com/citi/quantum/domain/repository/AutomovelRepository.java
+ com.citi.quantum.domain.repository.AutomovelRepository
+com/citi/quantum/domain/model/Usuario.java
+ com.citi.quantum.domain.model.Usuario
+com/citi/quantum/QuantumApplication.java
+ com.citi.quantum.QuantumApplication
